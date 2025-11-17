@@ -5,4 +5,4 @@ This repository contains the implementation code and sample datasets for the pap
 
 ## Quick Start
 ### 🎥 Demo Video
-https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mov
+https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
