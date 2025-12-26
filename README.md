@@ -53,12 +53,11 @@ The main contributions supported by this codebase include:
 - [Repository Structure](#repository-structure)
 - [Environment](#environment)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Reproducing Paper Results](#reproducing-paper-results)
 - [Data Description](#data-description)
-- [Results](#results)
+- [Usage](#usage)
 - [License](#license)
-- [Contact](#contact)
+- [Citation](#citation)
+
 
 ---
 
@@ -86,6 +85,51 @@ The main contributions supported by this codebase include:
     ├── figures/
     └── tables/
 ```
+## Environment
+	•	Operating System
+	  •	Ubuntu 20.04 / 22.04
+	  •	Windows 10 / 11
+    •	Mac OS
+	•	Python
+	  •	Python 3.9 or higher 
+	•	Python Package Manager
+	  Miniconda(recommended)
+
+Notes:
+	•	The code is OS-independent and does not rely on platform-specific binaries.
+
+## Installation
+
+We recommend using **Miniconda** to manage the Python environment and dependencies.
+
+### 1. Create a Conda environment
+
+    conda create -n my_env python=3.9 -y
+    conda activate my_env
+
+You may change the environment name (`my_env`) or the Python version (≥ 3.9) if needed.
+
+### 2. Install required Python packages
+
+Make sure you are in the project root directory, then run:
+
+    pip install -r requirements.txt
+
+This will install all required third-party libraries, including NumPy, SciPy, Open3D, scikit-learn, and point cloud processing utilities.
+
+### Notes
+
+- Installing **pc-skeletor** may fail in some environments due to dependency incompatibilities (most commonly related to NumPy versions).
+- If you encounter installation errors, please try **downgrading NumPy**  and then **download the source package from PyPI and install it locally**.
+  
+## Data-description
+```text
+
+```
+
+## Usage
+
+
 
 ## Citation
 
@@ -102,3 +146,10 @@ If you use this code or data in your research, please cite the following paper:
   pages   = {100136},
   doi     = {10.1016/j.plaphe.2025.100136}
 }
+```
+
+## License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this software for academic and commercial purposes, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.
