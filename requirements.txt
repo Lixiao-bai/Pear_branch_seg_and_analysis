@@ -1,0 +1,8 @@
+scikit-learn
+scipy
+open3d
+numpy
+pc-skeletor==0.06
+simpleicp
+pandas
+hdbscan
