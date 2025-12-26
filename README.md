@@ -21,13 +21,7 @@ If you use this repository in academic work, please cite the paper (see [Citatio
 A short demo illustrating the end-to-end processing pipeline is provided:
 
 - **Pipeline demo video**  
-  Original video: https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
-  
-  
-
-
-
-  
+  https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
 
 ---
 
@@ -43,13 +37,13 @@ The main contributions supported by this codebase include:
   - shoot length,
   - shoot inclination angle,
   - length distribution and density.
-- **Statistical analysis of pruning patterns**, revealing that:
+- **Statistical analysis of pruning patterns**, demonstrating that:
   - **78.62% of annual shoots** were removed by pruning,
   - **94.90% of total annual shoot length** was removed,
-  - pruning behavior is dominated by **thinning cuts rather than heading cuts**,
+  - pruning is dominated by **thinning cuts rather than heading cuts**,
   - tree architecture has a stronger influence on pruning strategy than cultivar.
 
-The pipeline is designed to support **objective pruning evaluation**, with potential applications in **automated pruning systems and precision orchard management**.
+The pipeline supports **objective pruning evaluation** and provides a quantitative basis for future **automated pruning and intelligent orchard management systems**.
 
 > **Important note**  
 > The data included in this repository is a **small demonstration subset** for reproducibility and code inspection.  
@@ -62,7 +56,7 @@ The pipeline is designed to support **objective pruning evaluation**, with poten
 - [Repository Structure](#repository-structure)
 - [Environment](#environment)
 - [Installation](#installation)
-- [Quick Start](#quick-start)
+- [Usage](#usage)
 - [Reproducing Paper Results](#reproducing-paper-results)
 - [Data Description](#data-description)
 - [Results](#results)
@@ -80,48 +74,22 @@ The pipeline is designed to support **objective pruning evaluation**, with poten
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-├── .gitignore
 │
 ├── data/
 │   ├── README.md
 │   ├── sample_raw/          # example raw point cloud data
-│   ├── sample_processed/    # processed point clouds / intermediates
-│   └── metadata/            # metadata and configuration files
+│   ├── sample_processed/   # processed point clouds / intermediates
+│   └── metadata/           # metadata and configuration files
 │
 ├── src/
 │   ├── __init__.py
-│   ├── configs/
-│   ├── data_loader.py       # data loading utilities
-│   ├── preprocessing.py    # filtering and preprocessing
-│   ├── models.py            # branch extraction / analysis methods
-│   ├── metrics.py           # evaluation metrics
-│   ├── visualization.py    # plotting and visualization
+│   ├── data_loader.py      # data loading
+│   ├── preprocessing.py   # filtering and preprocessing
+│   ├── models.py           # branch extraction and analysis
+│   ├── metrics.py          # quantitative evaluation
+│   ├── visualization.py   # plotting utilities
 │   └── utils.py
 │
-├── experiments/
-│   ├── run_example.sh       # example pipeline entry
-│   ├── configs/
-│   └── logs/
-│
-│
-├── results/
-    ├── figures/
-    └── tables/
----
-
-## Citation
-
-If you use this code or the example data in your research, please cite the following paper.
-
-### BibTeX
-
-```bibtex
-@article{Li2025PearDormantPruning,
-  title   = {Structural parameter determination and pruning pattern analysis of pear tree shoots for dormant pruning},
-  author  = {Li, Jiaqi and Sun, Hao and Wu, Gengchen and Xu, Hu and Tao, Shutian and Guo, Wei and Qi, Kaijie and Yin, Hao and Zhang, Shaoling and Ninomiya, Seishi and Mu, Yue},
-  journal = {Plant Phenomics},
-  year    = {2025},
-  volume  = {7},
-  pages   = {100136},
-  doi     = {10.1016/j.plaphe.2025.100136}
-}
+└── results/
+    ├── figures/            # figures reported in the paper
+    └── tables/             # tables reported in the paper
