@@ -82,7 +82,6 @@ The main contributions supported by this codebase include:
     ├── figures/
     └── tables/
 
-
 ## Citation
 
 If you use this code or data in your research, please cite the following paper:
