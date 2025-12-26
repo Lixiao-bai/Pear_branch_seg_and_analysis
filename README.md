@@ -1,57 +1,69 @@
-# Paper Title
+# Structural Parameter Determination and Pruning Pattern Analysis of Pear Tree Shoots for Dormant Pruning
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen.svg)](#installation)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plaphe.2025.100136-blue)](https://doi.org/10.1016/j.plaphe.2025.100136)
 
-This repository contains the code and example data for the paper:
+This repository provides the **code implementation and example data** for the paper:
 
-> **Structural Parameter Determination and Pruning Pattern Analysis of Pear Tree Shoots for Dormant Pruning**  
-> Jiaqi Li, Hao Sun, Gengchen Wu, ...  
-> *Plant Phenomics / 2025.  
+> **Structural parameter determination and pruning pattern analysis of pear tree shoots for dormant pruning**  
+> Jiaqi Li, Hao Sun, Gengchen Wu, Hu Xu, Shutian Tao, Wei Guo, Kaijie Qi, Hao Yin,  
+> Shaoling Zhang, Seishi Ninomiya, Yue Mu  
+> *Plant Phenomics*, 2025, Article 100136  
+> DOI: https://doi.org/10.1016/j.plaphe.2025.100136
 
-If you use this repository in your research, please cite our paper (see [Citation](#citation)).
+If you use this repository in academic work, please cite the paper (see [Citation](#citation)).
 
 ---
 
-## Quick Start
-### 🎥 Demo Video
-https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
+## Demo Video
 
-## Table of Contents
+A short demo illustrating the end-to-end processing pipeline is provided:
 
-- [Overview](#overview)
-- [Repository Structure](#repository-structure)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-  - [1. Prepare Data](#1-prepare-data)
-  - [2. Run the Example Pipeline](#2-run-the-example-pipeline)
-  - [3. Reproduce Main Results](#3-reproduce-main-results)
-- [Data Description](#data-description)
-- [Results & Figures](#results--figures)
-- [Citation](#citation)
-- [License](#license)
-- [Contact](#contact)
+- **Pipeline demo video**  
+  https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
 
 ---
 
 ## Overview
 
-This repository provides:
+This repository implements the **point-cloud-based branch analysis pipeline** proposed in the paper, aiming to quantitatively characterize **dormant pruning patterns of mature pear trees**.
 
-- **Implementation of the methods** proposed in our paper, including:
-  - `src/data_loader.py` for loading raw and processed data.
-  - `src/preprocessing.py` for data preprocessing and filtering.
-  - `src/models.py` for model / algorithm implementation.
-  - `src/metrics.py` for evaluation.
-- **Example datasets** in `data/` to demonstrate the full pipeline.
-- **Jupyter notebooks** in `notebooks/` that illustrate:
-  - Data inspection and visualization.
-  - Preprocessing and feature extraction.
-  - Model training and evaluation.
-- **Reproduction of key results** (tables and figures) reported in the paper.
+The main contributions supported by this codebase include:
 
-> 🔎 *Note:* The dataset included in this repository is a **small subset/toy example** for demonstration.  
-> For the full dataset used in the paper, please refer to [Data Description](#data-description).
+- **3D point cloud alignment and branch structure extraction** of pear trees during the dormant season.
+- **Quantitative measurement of structural parameters**, including:
+  - branch (shoot) number,
+  - shoot length,
+  - shoot inclination angle,
+  - length distribution and density.
+- **Statistical analysis of pruning patterns**, revealing that:
+  - **78.62% of annual shoots** were removed by pruning,
+  - **94.90% of total annual shoot length** was removed,
+  - pruning behavior is dominated by **thinning cuts rather than heading cuts**,
+  - tree architecture has a stronger influence on pruning strategy than cultivar.
+
+The pipeline is designed to support **objective pruning evaluation**, with potential applications in **automated pruning systems and precision orchard management**.
+
+> **Important note**  
+> The data included in this repository is a **small demonstration subset** for reproducibility and code inspection.  
+> It does **not** represent the full experimental dataset reported in the paper.
+
+---
+
+## Table of Contents
+
+- [Repository Structure](#repository-structure)
+- [Environment](#environment)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Reproducing Paper Results](#reproducing-paper-results)
+- [Data Description](#data-description)
+- [Results](#results)
+- [Citation](#citation)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -63,38 +75,38 @@ This repository provides:
 ├── LICENSE
 ├── requirements.txt
 ├── .gitignore
-
+│
 ├── data/
 │   ├── README.md
-│   ├── sample_raw/
-│   ├── sample_processed/
-│   └── metadata/
-
+│   ├── sample_raw/          # example raw point cloud data
+│   ├── sample_processed/    # processed point clouds / intermediates
+│   └── metadata/            # metadata and configuration files
+│
 ├── src/
 │   ├── __init__.py
 │   ├── configs/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── models.py
-│   ├── metrics.py
-│   ├── visualization.py
+│   ├── data_loader.py       # data loading utilities
+│   ├── preprocessing.py    # filtering and preprocessing
+│   ├── models.py            # branch extraction / analysis methods
+│   ├── metrics.py           # evaluation metrics
+│   ├── visualization.py    # plotting and visualization
 │   └── utils.py
-
+│
 ├── experiments/
-│   ├── run_example.sh
+│   ├── run_example.sh       # example pipeline entry
 │   ├── configs/
 │   └── logs/
-
+│
 ├── notebooks/
 │   ├── 0_data_overview.ipynb
 │   ├── 1_preprocessing_demo.ipynb
 │   ├── 2_training_demo.ipynb
 │   └── 3_evaluation_demo.ipynb
-
+│
 ├── results/
 │   ├── figures/
 │   └── tables/
-
+│
 └── docs/
     ├── method_overview.md
     └── changelog.md
