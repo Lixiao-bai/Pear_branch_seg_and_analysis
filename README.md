@@ -89,9 +89,9 @@ The main contributions supported by this codebase include:
 ## Environment
 
 **Operating System:**
-	- Ubuntu 20.04 / 22.04
-	- Windows 10 / 11
-	- Mac OS
+- Ubuntu 20.04 / 22.04
+- Windows 10 / 11
+- Mac OS
 **Python:**
 	- Python 3.9 or higher 
 **Python Package Manager:**
