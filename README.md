@@ -21,7 +21,9 @@ If you use this repository in academic work, please cite the paper (see [Citatio
 A short demo illustrating the end-to-end processing pipeline is provided:
 
 - **Pipeline demo video**  
-  https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
+  Original video: https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
+  
+  
 
 
 
@@ -101,20 +103,19 @@ The pipeline is designed to support **objective pruning evaluation**, with poten
 │   ├── configs/
 │   └── logs/
 │
-├── notebooks/
-│   ├── 0_data_overview.ipynb
-│   ├── 1_preprocessing_demo.ipynb
-│   ├── 2_training_demo.ipynb
-│   └── 3_evaluation_demo.ipynb
 │
 ├── results/
-│   ├── figures/
-│   └── tables/
-│
-└── docs/
-    ├── method_overview.md
-    └── changelog.md
+    ├── figures/
+    └── tables/
+---
 
+## Citation
+
+If you use this code or the example data in your research, please cite the following paper.
+
+### BibTeX
+
+```bibtex
 @article{Li2025PearDormantPruning,
   title   = {Structural parameter determination and pruning pattern analysis of pear tree shoots for dormant pruning},
   author  = {Li, Jiaqi and Sun, Hao and Wu, Gengchen and Xu, Hu and Tao, Shutian and Guo, Wei and Qi, Kaijie and Yin, Hao and Zhang, Shaoling and Ninomiya, Seishi and Mu, Yue},
