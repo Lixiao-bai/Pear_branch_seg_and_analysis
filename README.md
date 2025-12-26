@@ -73,16 +73,13 @@ The main contributions supported by this codebase include:
 ├── data/
 │   ├── README.md
 │   ├── sample_raw/
-│   ├── sample_processed/
-│   └── metadata/
+│   └── sample_processed/
 │
 ├── src/
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── models.py
-│   ├── metrics.py
-│   ├── visualization.py
+│   ├── Registration.py
+│   ├── Distance_filter&cluster.py
+│   ├── parameters_measurement.py
+│   ├── Get_new&pruned.py
 │   └── utils.py
 │
 └── results/
@@ -97,11 +94,11 @@ If you use this code or data in your research, please cite the following paper:
 ```bibtex
 @article{Li2025PearPruning,
   title   = {Structural parameter determination and pruning pattern analysis of pear tree shoots for dormant pruning},
-  author  = {Li, Jiaqi and Sun, Hao and Wu, Gengchen and Xu, Hu and Tao, Shutian and Guo, Wei and Qi, Kaijie and Yin, Hao and Zhang, Shaoling and Ninomiya, Seishi and Mu, Yue},
+  author  = {Jiaqi Li, Hao Sun, Gengchen Wu, Hu Xu, Shutian Tao, Wei Guo, Kaijie Qi, Hao Yin, Shaoling Zhang, Seishi Ninomiya, Yue Mu},
   journal = {Plant Phenomics},
   year    = {2025},
-  volume  = {},
-  number  = {},
+  volume  = {7},
+  issue  = {4},
   pages   = {100136},
   doi     = {10.1016/j.plaphe.2025.100136}
 }
