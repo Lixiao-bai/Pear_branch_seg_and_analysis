@@ -12,7 +12,7 @@ This repository provides the **code implementation and example data** for the pa
 > *Plant Phenomics*, 2025, Article 100136  
 > DOI: https://doi.org/10.1016/j.plaphe.2025.100136
 
-If you use this repository in academic work, please cite the paper (see [Citation](#citation)).
+If you use this repository in academic work, please cite the paper.
 🔖 [Citation](#citation) · 📄 [Paper DOI](https://doi.org/10.1016/j.plaphe.2025.100136)
 
 ---
@@ -50,7 +50,6 @@ The main contributions supported by this codebase include:
 - [Reproducing Paper Results](#reproducing-paper-results)
 - [Data Description](#data-description)
 - [Results](#results)
-- [Citation](#citation)
 - [License](#license)
 - [Contact](#contact)
 
