@@ -88,17 +88,17 @@ The main contributions supported by this codebase include:
 
 ## Environment
 
-	•	Operating System
-	  •	Ubuntu 20.04 / 22.04
-	  •	Windows 10 / 11
-    •	Mac OS
-	•	Python
-	  •	Python 3.9 or higher 
-	•	Python Package Manager
-	  Miniconda(recommended)
+Operating System:
+	Ubuntu 20.04 / 22.04
+	Windows 10 / 11
+	Mac OS
+Python:
+	Python 3.9 or higher 
+Python Package Manager:
+	Miniconda(recommended)
 
 Notes:
-	•	The code is OS-independent and does not rely on platform-specific binaries.
+	The code is OS-independent and does not rely on platform-specific binaries.
 
 
 ## Installation
