@@ -31,23 +31,12 @@ This repository implements the **point-cloud-based branch analysis pipeline** pr
 
 The main contributions supported by this codebase include:
 
-- **3D point cloud alignment and branch structure extraction** of pear trees during the dormant season.
-- **Quantitative measurement of structural parameters**, including:
-  - branch (shoot) number,
-  - shoot length,
-  - shoot inclination angle,
-  - length distribution and density.
-- **Statistical analysis of pruning patterns**, demonstrating that:
-  - **78.62% of annual shoots** were removed by pruning,
-  - **94.90% of total annual shoot length** was removed,
-  - pruning is dominated by **thinning cuts rather than heading cuts**,
-  - tree architecture has a stronger influence on pruning strategy than cultivar.
-
-The pipeline supports **objective pruning evaluation** and provides a quantitative basis for future **automated pruning and intelligent orchard management systems**.
-
-> **Important note**  
-> The data included in this repository is a **small demonstration subset** for reproducibility and code inspection.  
-> It does **not** represent the full experimental dataset reported in the paper.
+- 3D point cloud alignment and branch structure extraction of pear trees during the dormant season.
+- Quantitative measurement of structural parameters, including branch number, shoot length, and inclination angle.
+- Statistical analysis of pruning patterns, demonstrating that:
+  - 78.62% of annual shoots were removed,
+  - 94.90% of total annual shoot length was removed,
+  - pruning is dominated by thinning cuts rather than heading cuts.
 
 ---
 
@@ -63,7 +52,6 @@ The pipeline supports **objective pruning evaluation** and provides a quantitati
 - [Citation](#citation)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -77,19 +65,19 @@ The pipeline supports **objective pruning evaluation** and provides a quantitati
 │
 ├── data/
 │   ├── README.md
-│   ├── sample_raw/          # example raw point cloud data
-│   ├── sample_processed/   # processed point clouds / intermediates
-│   └── metadata/           # metadata and configuration files
+│   ├── sample_raw/
+│   ├── sample_processed/
+│   └── metadata/
 │
 ├── src/
 │   ├── __init__.py
-│   ├── data_loader.py      # data loading
-│   ├── preprocessing.py   # filtering and preprocessing
-│   ├── models.py           # branch extraction and analysis
-│   ├── metrics.py          # quantitative evaluation
-│   ├── visualization.py   # plotting utilities
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── models.py
+│   ├── metrics.py
+│   ├── visualization.py
 │   └── utils.py
 │
 └── results/
-    ├── figures/            # figures reported in the paper
-    └── tables/             # tables reported in the paper
+    ├── figures/
+    └── tables/
