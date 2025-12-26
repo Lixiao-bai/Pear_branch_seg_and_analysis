@@ -96,7 +96,7 @@ We recommend using **Miniconda** to manage the Python environment and dependenci
 
 ```shell
 # HTTPS
-https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis.git
+git clone https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis.git
 ```
 
 ### 2. Create a Conda environment
