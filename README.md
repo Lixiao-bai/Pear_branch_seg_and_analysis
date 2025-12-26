@@ -92,14 +92,21 @@ Notes:
 
 We recommend using **Miniconda** to manage the Python environment and dependencies.
 
-### 1. Create a Conda environment
+### 1. Cloning the Repository
+
+```shell
+# HTTPS
+https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis.git
+```
+
+### 2. Create a Conda environment
 
     conda create -n my_env python=3.9 -y
     conda activate my_env
 
 You may change the environment name (`my_env`) or the Python version (≥ 3.9) if needed.
 
-### 2. Install required Python packages
+### 3. Install required Python packages
 
 Make sure you are in the project root directory, then run:
 
