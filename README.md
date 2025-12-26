@@ -33,20 +33,6 @@ https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/releases/download/vid
 
 ---
 
-## Overview
-
-This repository implements the **point-cloud-based branch analysis pipeline** proposed in the paper, aiming to quantitatively characterize **dormant pruning patterns of mature pear trees**.
-
-The main contributions supported by this codebase include:
-
-- 3D point cloud alignment and branch structure extraction of pear trees during the dormant season.
-- Quantitative measurement of structural parameters, including branch number, shoot length, and inclination angle.
-- Statistical analysis of pruning patterns, demonstrating that:
-  - 78.62% of annual shoots were removed,
-  - 94.90% of total annual shoot length was removed,
-  - pruning is dominated by thinning cuts rather than heading cuts.
-
----
 
 ## Table of Contents
 
@@ -70,7 +56,6 @@ The main contributions supported by this codebase include:
 ├── requirements.txt
 │
 ├── data/
-│   ├── README.md
 │   ├── sample_raw/
 │   └── sample_processed/
 │
@@ -124,8 +109,7 @@ This will install all required third-party libraries, including NumPy, SciPy, Op
 
 ### Notes
 
-- Installing **pc-skeletor** may fail in some environments due to dependency incompatibilities (most commonly related to NumPy versions).
-- If you encounter installation errors, please try **downgrading NumPy**  and then **download the source package from PyPI and install it locally**.
+- Installing **pc-skeletor** may fail in some environments due to dependency incompatibilities (most commonly related to NumPy versions). If you encounter installation errors, please try **downgrading NumPy**  and then **download the source package from PyPI and install it locally**.
   
 ## Data-description
 ```text
