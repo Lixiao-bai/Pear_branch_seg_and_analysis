@@ -20,9 +20,8 @@ If you use this repository in academic work, please cite the paper.
 ## Demo Video
 
 A short demo illustrating the end-to-end processing pipeline is provided:
-
 - **Pipeline demo video**  
-  https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/blob/main/demo_pipeline.mp4
+https://github.com/Lixiao-bai/Pear_branch_seg_and_analysis/releases/download/video/demo_pipeline.mp4
 
 ---
 
