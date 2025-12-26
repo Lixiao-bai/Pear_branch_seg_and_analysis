@@ -92,10 +92,12 @@ The main contributions supported by this codebase include:
 - Ubuntu 20.04 / 22.04
 - Windows 10 / 11
 - Mac OS
+  
 **Python:**
-	- Python 3.9 or higher 
+- Python 3.9 or higher
+  
 **Python Package Manager:**
-	- Miniconda(recommended)
+- Miniconda(recommended)
 
 Notes:
 	The code is OS-independent and does not rely on platform-specific binaries.
