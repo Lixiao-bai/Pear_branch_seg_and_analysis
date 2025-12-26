@@ -13,6 +13,7 @@ This repository provides the **code implementation and example data** for the pa
 > DOI: https://doi.org/10.1016/j.plaphe.2025.100136
 
 If you use this repository in academic work, please cite the paper (see [Citation](#citation)).
+🔖 [Citation](#citation) · 📄 [Paper DOI](https://doi.org/10.1016/j.plaphe.2025.100136)
 
 ---
 
@@ -81,3 +82,20 @@ The main contributions supported by this codebase include:
 └── results/
     ├── figures/
     └── tables/
+
+
+## Citation
+
+If you use this code or data in your research, please cite the following paper:
+
+```bibtex
+@article{Li2025PearPruning,
+  title   = {Structural parameter determination and pruning pattern analysis of pear tree shoots for dormant pruning},
+  author  = {Li, Jiaqi and Sun, Hao and Wu, Gengchen and Xu, Hu and Tao, Shutian and Guo, Wei and Qi, Kaijie and Yin, Hao and Zhang, Shaoling and Ninomiya, Seishi and Mu, Yue},
+  journal = {Plant Phenomics},
+  year    = {2025},
+  volume  = {},
+  number  = {},
+  pages   = {100136},
+  doi     = {10.1016/j.plaphe.2025.100136}
+}
