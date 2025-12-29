@@ -132,7 +132,7 @@ This will install all required third-party libraries, including NumPy, SciPy, Op
 If you use this code or data in your research, please cite the following paper:
 
 ```bibtex
-@article{Li2025PearPruning,
+@article{LI2025100136,
   title   = {Structural parameter determination and pruning pattern analysis of pear tree shoots for dormant pruning},
   author  = {Jiaqi Li, Hao Sun, Gengchen Wu, Hu Xu, Shutian Tao, Wei Guo, Kaijie Qi, Hao Yin, Shaoling Zhang, Seishi Ninomiya, Yue Mu},
   journal = {Plant Phenomics},
@@ -140,7 +140,9 @@ If you use this code or data in your research, please cite the following paper:
   volume  = {7},
   issue  = {4},
   pages   = {100136},
-  doi     = {10.1016/j.plaphe.2025.100136}
+  issn = {2643-6515},
+  doi    = {https://doi.org/10.1016/j.plaphe.2025.100136},
+  url = {https://www.sciencedirect.com/science/article/pii/S2643651525001426}
 }
 ```
 
