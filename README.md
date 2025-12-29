@@ -138,11 +138,11 @@ If you use this code or data in your research, please cite the following paper:
   journal = {Plant Phenomics},
   year    = {2025},
   volume  = {7},
-  issue  = {4},
+  issue   = {4},
   pages   = {100136},
-  issn = {2643-6515},
-  doi    = {https://doi.org/10.1016/j.plaphe.2025.100136},
-  url = {https://www.sciencedirect.com/science/article/pii/S2643651525001426}
+  issn    = {2643-6515},
+  doi     = {https://doi.org/10.1016/j.plaphe.2025.100136},
+  url     = {https://www.sciencedirect.com/science/article/pii/S2643651525001426}
 }
 ```
 
